@@ -34,5 +34,10 @@ CMD ["/sbin/init"]
 #RUN apt-get clean \
 # && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN mkdir /var/www/html/docs
+RUN mkdir /var/www/html/docs \
+#&& mkdir /var/www/listing \
+&& rm -Rf /var/www/html/index.html
 COPY configs/docs/ /var/www/html/docs/
+ADD configs/listing /var/www/html/listing
+COPY configs/htaccess.txt /var/www/html/.htaccess
+COPY configs/htaccess.txt /var/www/html/docs/.htaccess
