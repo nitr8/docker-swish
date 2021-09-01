@@ -39,5 +39,6 @@ RUN mkdir /var/www/html/docs \
 && rm -Rf /var/www/html/index.html
 COPY configs/docs/ /var/www/html/docs/
 ADD configs/listing /var/www/html/listing
+ADD configs/example /var/www/html/example
 COPY configs/htaccess.txt /var/www/html/.htaccess
 COPY configs/htaccess.txt /var/www/html/docs/.htaccess

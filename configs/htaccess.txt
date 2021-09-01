@@ -12,9 +12,9 @@ Options +Indexes
   # Some meta tags to add to the head tag
   IndexHeadInsert "<meta name='viewport' content='width=device-width, initial-scale=1'><meta http-equiv='X-UA-Compatible' content='IE=edge'>"
 
-  HeaderName "listing/header.html"
-  ReadmeName "listing/footer.html"
-  IndexStyleSheet "listing/table-darkmode.css"
+  HeaderName "/listing/header.html"
+  ReadmeName "/listing/footer.html"
+  IndexStyleSheet "/listing/table-darkmode.css"
 
 
   # Registering icons
