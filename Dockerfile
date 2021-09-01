@@ -33,3 +33,6 @@ CMD ["/sbin/init"]
 # Clean up APT when done.
 #RUN apt-get clean \
 # && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN mkdir /var/www/html/docs
+COPY configs/docs/ /var/www/html/docs/
